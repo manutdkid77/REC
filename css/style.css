@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	text-rendering: optimizeLegibility;
+	color: white;
+	font-size: 1em;
+}
+header{
+	height: 100vh;
+	background:linear-gradient(rgba(0, 0, 0, 0.55),rgba(20, 4, 17, 0.88)),url('structure.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-panel{
+	background: url('structure.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 75vh;
+    padding: 1.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-container{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+	width: 50px;
+	transform: translate(30px,5px) scale(1.8);
+}
+
+.quote{
+	font-size: 0.8em;
+    text-decoration: underline;
+    font-family: monospace;
+}
+.nav-toggle{
+	display: inline-block;
+    color: white;
+    font-size: 1.6em;
+}
+
+.second-container{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-title{
+	width: 25%;
+}
+.main-title h1{
+	font-size: 4.8em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 10px black;
+}
+.main-title h3{
+	font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 4px black;
+}
+
+.nav{ display: none; }
+.nav ul{
+	list-style-type: none;
+}
+.nav ul li{
+	margin-bottom: 3%;
+	transform: translate(-65%,0);
+	position: relative;
+}
+.active{
+	border-right: 2px solid white;
+    padding-right: 40px;
+}
+.nav ul li a,
+.nav ul li a:active,
+.nav ul li a:visited{
+	color: white;
+	text-decoration: none;
+	font-size: 0.8em;
+    font-weight: 600;
+}
+
+.active{
+	display: inline-block;
+    width: 35%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    right: -60%;
+}
+
+.nav ul li a:hover{
+	font-size: 0.82em;
+}
+
+.third-container{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.address{
+	font-weight: 300;
+	font-size: 0.8em;
+    text-align: right;
+    width: 12%;
+}
+
+
+@media (max-width: 1024px){
+	.logo{ transform: translate(10px,15px) scale(1.3);}	
+}
+
+@media (max-width: 480px){
+	.quote{width: 45%; font-size:0.9em; text-align: center; transform: translate(0px,10px);}
+	.nav-toggle{    font-size: 1.9em; transform: translate(-15px,10px);}
+	.main-title {width: 40%;}
+	.main-title h1 {font-size: 3.5em;}
+	.main-title h3 {font-size: 1.3em;}
+	.nav ul li{transform: translate(-20%,0);}
+	.active {display: block; height: 2px; width: 85%; position: initial; }
+
+	.address{width: 35%;}
+}
