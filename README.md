@@ -1,5 +1,3 @@
-# REC
-
 This is a  mockup of a popular design concept created by digital agency [**m-2-h**](https://dribbble.com/shots/2580465-REC)
 
 ## Goal
